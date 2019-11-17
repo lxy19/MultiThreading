@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.concurrent.atomic.LongAdder;
 
-public class BookScanner implements Runnable{
+public class BookScanner extends Thread{
 
     private Map<String, LongAdder> counter;
     private String pathToTextFile;
